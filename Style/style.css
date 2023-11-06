@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: #f63dccc4;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("AESTHETIC-VIBRANT-NATURE-SCENERY-322213KK.png") no-repeat center/cover;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+#modal{
+    display: none;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+#mainContainer{
+    border: 0.3rem solid rgb(242, 31, 149, .2);
+    border-radius: 20px;
+    backdrop-filter: blur(0.625rem);
+    padding: 1.875rem 2.5rem;
+    box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+    color: #fffffff7;
+}
+
+#mainTextContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
+}
+
+#mainTextContainer h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#registrationForm{
+    display: grid;
+    align-items: center;
+    row-gap: 0.625rem;
+    padding-bottom: 1.25rem;
+
+}
+
+#registrationForm input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    padding: 1.25rem;
+    outline: none;
+    font-family: 'MuseoModerno', sans-serif;
+    caret-color: #f63dcc;
+}
+
+#fromWhereContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.313rem;
+}
+
+#registrationForm select {
+    appearance: none;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 20px;
+    color: white;
+    padding: 0.313rem;
+    outline: none;
+    cursor: pointer;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+#registrationForm select:hover{
+    background-color: rgb(242, 31, 149, .2);
+}
+
+select option:hover, select option:checked{
+    box-shadow: 0 0 10px 100px #f63dcc inset; /* nem működik. */
+}
+
+#registrationForm select:focus{
+    background-color: #f63dcc;
+}
+
+#registrationForm input::placeholder{
+    color: white;
+}
+
+#registrationForm input:focus{
+    border: 2px solid rgb(242, 31, 149, .2);
+}
+
+#registrationForm input[type=checkbox]{
+    accent-color: #f63dcc;
+    cursor: pointer;
+    appearance: none;
+    padding: 0.438rem;
+}
+
+#registrationForm input[type=checkbox]:hover{
+    background-color: rgb(242, 31, 149, .2);
+}
+
+#registrationForm input[type=checkbox]:checked{
+    background-color: #f63dcc;
+}
+
+#privacyStatementContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.313rem;
+}
+
+#privacyStatementContainer input {
+    width: 1rem;
+}
+
+#registrationForm input[type=submit]{
+    cursor: pointer;
+    background-color: #f63dccc4;
+}
+
+#errorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    color: #fffffff7;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Public/Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Public/Style/favicon.ico" type="image/ico">
+    <title>Neon Forest</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="mainTextContainer">
+            <h1>Regisztráció</h1>
+        </div>
+        <form id="registrationForm">
+            <input type="text" id="name" name="name" placeholder="Név*" autofocus >
+            <input type="text" id="email" name="email" placeholder="E-mail cím*">
+            <input type="text" id="reEmail" name="reEmail" placeholder="E-mail cím újra*">
+            <div id="fromWhereContainer">
+                <select id="fromWhere" name="fromWhere">
+                    <!-- onfocus='this.size=4;' onblur='this.size=0;' onchange='this.size=1; this.blur();' nem működött megfelelően -->
+                    <option value="">Honnan hallott rólunk?*</option>
+                    <option value="internet">Internetről</option>
+                    <option value="tv">Televízióból</option>
+                    <option value="other">Egyéb helyről</option>
+                </select>
+            </div>
+            <div id="privacyStatementContainer">
+                <label for="privacyStatement">Adatkezelési nyilatkozat elfogadása*</label>
+                <input type="checkbox" id="privacyStatement" name="privacyStatement">
+            </div>
+            <input type="submit" id="submitButton" value="Regisztráció">
+        </form>
+        <div id="modal">
+            <span>Sikeres regisztráció</span>
+        </div>
+        <div id="errorContainer"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
